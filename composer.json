@@ -1,5 +1,5 @@
 {
-    "name": "hyperf/rpc",
+    "name": "laravel-hyperf-rpc/client",
     "description": "接入hyerf rpc通信",
     "authors": [
         {
