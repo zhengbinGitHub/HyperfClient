@@ -6,7 +6,7 @@
  * Time: 11:28
  */
 
-namespace RpcService;
+namespace LaravelHyperfClientRpcService;
 
 use Ramsey\Uuid\Uuid;
 

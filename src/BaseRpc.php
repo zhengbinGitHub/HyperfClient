@@ -6,7 +6,7 @@
  * Time: 14:26
  */
 
-namespace RpcService;
+namespace LaravelHyperfClientRpcService;
 
 
 class BaseRpc

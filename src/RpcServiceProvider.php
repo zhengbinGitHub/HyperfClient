@@ -1,6 +1,6 @@
 <?php
 
-namespace RpcService;
+namespace LaravelHyperfClientRpcService;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class RpcServiceProvider extends ServiceProvider
      */
     public function register()
     {
-		$this->app->bind('rpcservice', function($app){
-			return new RpcServiceManage($app['config']['rpcservice']);
+		$this->app->bind('hyperf-rpc-client', function($app){
+			return new RpcServiceManage($app['config']['hyperf-rpc-client']);
 		});
     }
 
@@ -26,7 +26,7 @@ class RpcServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__.'/../config/rpcservice.php' => config_path('rpcservice.php'),
+			__DIR__.'/../config/hyperf-rpc-client.php' => config_path('hyperf-rpc-client.php'),
 		], 'config');
 	}
 
@@ -37,6 +37,6 @@ class RpcServiceProvider extends ServiceProvider
 	 */
 	public function provides()
 	{
-		return ['rpcservice'];
+		return ['hyperf-rpc-client'];
 	}
 }

@@ -7,5 +7,10 @@
             "email": "122606861@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "LaravelHyperfClientRpcService\\": "src"
+      }
+    },
 }
