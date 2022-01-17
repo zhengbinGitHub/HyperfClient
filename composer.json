@@ -1,0 +1,11 @@
+{
+    "name": "hyperf/rpc",
+    "description": "接入hyerf rpc通信",
+    "authors": [
+        {
+            "name": "zhengbinGitHub",
+            "email": "122606861@qq.com"
+        }
+    ],
+    "require": {}
+}
